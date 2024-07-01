@@ -1,0 +1,95 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:wght@400;700&family=Cinzel:wght@400..900&display=swap');
+
+/* variables for css property */
+:root {
+    --text-color: #F8F9FC;
+    --heading-color: #F8F9FC;
+
+    /* bg colors */
+    --bg-color: #C00000;
+}
+
+/* Asterisk wildcard selector to override the default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic project style */
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+h1, h2, h3 {
+    font-family: "Cinzel", serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--heading-color);
+}
+
+/* Header */
+header {
+    background-color: var(--bg-color);
+    padding: 0 1rem;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* logo styles */
+#logo {
+    font-size: 46px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+/* menu items */
+#menu {
+    list-style-type: none;
+    text-transform: uppercase;
+    display: flex;
+    font-size: 24px;
+}
+
+#menu > li {
+    padding: 0 2rem;
+}
+
+.active {
+    border-bottom: 1px solid var(--text-color);
+}
+
+/* hiding the nav toggle */
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+}
+
+/* Main Content */
+main {
+    background-color: ghostwhite;
+    flex: 1;
+}
+
+/* footer */
+footer {
+    background-color: var(--bg-color);
+}

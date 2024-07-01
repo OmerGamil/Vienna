@@ -15,11 +15,25 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
     <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        Header
+        <a href="index.html">
+            <h1 id="logo">Vienna</h1>
+        </a>
+
+        <input type="checkbox" id="nav-toggle" name="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
+
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="to-see-in-vienna.html">To see in Vienna</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Main Content -->
@@ -31,5 +45,8 @@
     <footer>
         Footer
     </footer>
+
+    <!-- Fontawesome Kit-->
+    <script src="https://kit.fontawesome.com/97766ba589.js" crossorigin="anonymous"></script>
 </body>
 </html>

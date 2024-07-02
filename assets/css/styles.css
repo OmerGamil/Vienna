@@ -5,7 +5,6 @@
 :root {
     --text-color: #DE3C3C;
     --heading-color: #C00000;
-
     /* bg colors */
     --bg-color: #F8F9FC;
 }
@@ -53,6 +52,7 @@ header a {
 
 /* logo styles */
 #logo {
+    color: var(--text-color);
     font-size: 46px;
     padding: 10px;
     margin-left: 20px;
@@ -60,6 +60,7 @@ header a {
 
 /* menu items */
 #menu {
+    color: var(--heading-color);
     list-style-type: none;
     text-transform: uppercase;
     display: flex;
@@ -92,19 +93,38 @@ main {
 
 /* footer */
 footer {
+    color: var(--heading-color);
     background-color: var(--bg-color);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
-#social-networks {
+#footer-logo {
     text-align: center;
-    padding: 20px 0;
+}
+
+#footer-logo a {
+    text-decoration: none;
+}
+
+#footer-logo h1 {
+    color: var(--text-color);
+}
+
+.footer-list h4 {
+    font-size: 130%;
+}
+
+.footer-list ul {
+    text-align: left;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     list-style-type: none;
 }
 
-#social-networks i {
+.footer-list i {
     color: var(--heading-color);
-    font-size: 160%;
-    padding: 5%;
 }

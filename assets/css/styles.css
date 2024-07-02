@@ -3,11 +3,11 @@
 
 /* variables for css property */
 :root {
-    --text-color: #F8F9FC;
-    --heading-color: #F8F9FC;
+    --text-color: #DE3C3C;
+    --heading-color: #C00000;
 
     /* bg colors */
-    --bg-color: #C00000;
+    --bg-color: #F8F9FC;
 }
 
 /* Asterisk wildcard selector to override the default styles added by the browser */
@@ -85,11 +85,26 @@ header a {
 
 /* Main Content */
 main {
-    background-color: ghostwhite;
+    margin-top: 82px;
+    background-color: var(--bg-color);
     flex: 1;
 }
 
 /* footer */
 footer {
     background-color: var(--bg-color);
+}
+
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+    color: var(--heading-color);
+    font-size: 160%;
+    padding: 5%;
 }

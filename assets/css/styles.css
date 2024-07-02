@@ -7,6 +7,7 @@
     --heading-color: #C00000;
     /* bg colors */
     --bg-color: #F8F9FC;
+    --overlay-color: #F7B32D;
 }
 
 /* Asterisk wildcard selector to override the default styles added by the browser */
@@ -14,6 +15,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 /* General Styles */
@@ -67,19 +70,21 @@ header a {
     font-size: 24px;
 }
 
+
+#menu a {
+    padding: 0.5rem;
+    margin: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
 #menu a:hover {
     border-bottom: 1px solid var(--text-color);
+    border-radius: 5px;
+    background-color: rgba(247, 179, 45, 0.5);
 }
-
-#menu > li {
-    padding: 0 2rem;
-}
-
 
 .active {
-    padding: 0.5rem;
-    border: 1px solid var(--text-color);
-    border-radius: 5px;
+    border-bottom: 1px solid var(--text-color);
 }
 
 /* hiding the nav toggle */

@@ -42,10 +42,13 @@ header {
     background-color: var(--bg-color);
     padding: 0 1rem;
     position: fixed;
+    z-index: 99;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+
+    border-bottom: 1px solid var(--heading-color);
 }
 
 header a {
@@ -101,6 +104,62 @@ main {
     margin-top: 82px;
     background-color: var(--bg-color);
     flex: 1;
+}
+
+/* Hero section */
+#hero {
+    background: url('../images/Hero.jpg') rgba(247, 179, 45, 0.2) center top/cover;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    height: 800px;
+    width: 100%;
+    position: relative;
+}
+
+#hero::after {
+    content: "";
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(248,249,252,1) 100%);
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    width: 100%;
+    height: 300px;
+}
+
+/* cover text */
+#cover-text {
+    /* The last value of the rgba sets the opacity */
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#cover-text h1 {
+    font-size: 3.5rem;
+    color: var(--bg-color);
+
+    display: inline-block;
+    
+    background-color: rgba(247, 179, 45, 0.6);
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+
+    padding: 5px 20px;
+}
+
+#cover-text h2 {
+    font-size: 2.5rem;
+    color: var(--bg-color);
+
+    background-color: rgba(247, 179, 45, 0.6);
+    border-radius: 10px;
+
+    padding: 5px 20px;
 }
 
 /* footer */

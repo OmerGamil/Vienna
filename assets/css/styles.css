@@ -144,7 +144,7 @@ main {
 
     display: inline-block;
     
-    background-color: rgba(247, 179, 45, 0.6);
+    background-color: rgba(192, 0, 0, 0.6);
     border-radius: 10px;
 
     margin-bottom: 20px;
@@ -156,7 +156,7 @@ main {
     font-size: 2.5rem;
     color: var(--bg-color);
 
-    background-color: rgba(247, 179, 45, 0.6);
+    background-color: rgba(192, 0, 0, 0.6);
     border-radius: 10px;
 
     padding: 5px 20px;

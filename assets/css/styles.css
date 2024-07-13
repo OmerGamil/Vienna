@@ -1,5 +1,5 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:wght@400;700&family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Playfair+Display:wght@400..900&display=swap');
 
 /* variables for css property */
 :root {
@@ -25,7 +25,7 @@ body {
     display: flex;
     flex-direction: column;
     /* Generic project style */
-    font-family: "Bona Nova SC", serif;
+    font-family: "Playfair Display", serif;
     font-weight: 400;
     color: var(--text-color);
 }
@@ -139,16 +139,12 @@ main {
 }
 
 #cover-text h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: var(--bg-color);
-
     display: inline-block;
-    
     background-color: rgba(192, 0, 0, 0.6);
     border-radius: 10px;
-
     margin-bottom: 20px;
-
     padding: 5px 20px;
 }
 
@@ -160,6 +156,48 @@ main {
     border-radius: 10px;
 
     padding: 5px 20px;
+}
+
+/* Deff section */
+#deff {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-divs {
+    margin: 30px 0;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.info-divs h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.info-divs h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.info-divs p {
+    font-size: 1.75rem;
+    color: brown;
+    margin-bottom: 30px;
+    line-height: 3rem;
+    text-align: justify;
+}
+
+.info-divs hr {
+    border: 1px solid var(--heading-color);
+    border-radius: 20px;
 }
 
 /* footer */

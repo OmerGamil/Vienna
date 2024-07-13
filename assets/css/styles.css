@@ -70,7 +70,7 @@ header a {
     list-style-type: none;
     text-transform: uppercase;
     display: flex;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 
@@ -208,6 +208,11 @@ footer a {
 }
 
 @media screen and (max-width: 940px) {
+    /* Changing the root font size */
+    html {
+        font-size: 12px;
+    }
+
     /* Navbar styles with dropdown toggle */
     nav {
         position: absolute;
@@ -245,6 +250,11 @@ footer a {
 }
 
 @media screen and (max-width: 720px) {
+    /* Changing the root font size */
+    html {
+        font-size: 10px;
+    }
+
     footer {
         flex-direction: column;
         justify-content: center;

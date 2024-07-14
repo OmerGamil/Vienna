@@ -46,7 +46,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
 
     border-bottom: 1px solid var(--heading-color);
 }
@@ -202,7 +202,22 @@ main {
 
 /* Form */
 #send-us {
-    padding: 40px 10% 0 10%;
+    padding: 100px 10%;
+    background: url('../images/Form-photo.jpg') rgba(248,249,252,0.4) center center/cover;
+    background-attachment: fixed;
+    background-blend-mode: lighten;
+}
+
+#send-us::after {
+    content: "";
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(248,249,252,1) 100%);
+    position: absolute;
+    z-index: 0;
+    bottom: -60px;
+    left: 0;
+    pointer-events: none;
+    width: 100%;
+    height: 200px;
 }
 
 #send-form {
@@ -212,8 +227,8 @@ main {
     margin: 0 auto;
     max-width: 800px;
     background-color: var(--bg-color);
-    border: 1px solid var(--heading-color);
     border-radius: 20px;
+    z-index: 99;
 }
 
 #send-form > h2 {
@@ -278,14 +293,15 @@ main {
     padding: 20px 50px;
     font-size: 1.5rem;
     font-family: "Cinzel", serif;
-    background-color: var(--bg-color);
-    color: var(--heading-color);
+    background-color: var(--heading-color);
+    color: var(--bg-color);
     cursor: pointer;
+    z-index: 99;
 }
 
 .send-button:hover {
-    color: var(--bg-color);
-    background-color: var(--heading-color);
+    color: var(--heading-color);
+    background-color: var(--bg-color);
 }
 
 /* footer */
@@ -366,12 +382,17 @@ footer a {
 
     .nav-toggle-label {
         display: block;
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: 700;
     }
 
     .nav-toggle-label i {
         color: var(--heading-color);
+    }
+
+    /* form button */
+    .send-button {
+        padding: 15px 40px;
     }
 }
 
@@ -393,5 +414,10 @@ footer a {
 
     .footer-list ul {
         text-align: center;
+    }
+
+    /* form button */
+    .send-button {
+        padding: 10px 30px;
     }
 }

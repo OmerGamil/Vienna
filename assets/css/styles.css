@@ -108,7 +108,7 @@ main {
 
 /* Hero section */
 #hero {
-    background: url('../images/Hero.jpg') rgba(247, 179, 45, 0.2) center center/cover;
+    background: url('../images/hero.jpg') rgba(247, 179, 45, 0.2) center center/cover;
     background-attachment: fixed;
     background-blend-mode: darken;
     height: 800px;
@@ -203,7 +203,7 @@ main {
 /* Form */
 #send-us {
     padding: 100px 10%;
-    background: url('../images/Form-photo.jpg') rgba(248,249,252,0.4) center center/cover;
+    background: url('../images/form-photo.jpg') rgba(248,249,252,0.4) center center/cover;
     background-attachment: fixed;
     background-blend-mode: lighten;
 }

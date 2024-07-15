@@ -108,7 +108,7 @@ main {
 
 /* Hero section */
 #hero {
-    background: url('../images/Hero.jpg') rgba(247, 179, 45, 0.2) center top/cover;
+    background: url('../images/Hero.jpg') rgba(247, 179, 45, 0.2) center center/cover;
     background-attachment: fixed;
     background-blend-mode: darken;
     height: 800px;
@@ -206,18 +206,6 @@ main {
     background: url('../images/Form-photo.jpg') rgba(248,249,252,0.4) center center/cover;
     background-attachment: fixed;
     background-blend-mode: lighten;
-}
-
-#send-us::after {
-    content: "";
-    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(248,249,252,1) 100%);
-    position: absolute;
-    z-index: 0;
-    bottom: -60px;
-    left: 0;
-    pointer-events: none;
-    width: 100%;
-    height: 200px;
 }
 
 #send-form {

@@ -291,7 +291,7 @@ main {
     background-color: var(--bg-color);
 }
 
-/* to-see section */
+/* to-see page */
 #to-see {
     padding: 3rem;
 }
@@ -311,7 +311,7 @@ main {
 }
 
 #to-see > div > div {
-    width: 50%;
+    width: 55%;
 }
 
 #to-see h3 {
@@ -322,6 +322,7 @@ main {
 #to-see p {
     font-size: 1.5rem;
     line-height: 2rem;
+    text-align: justify;
 }
 
 #to-see img {
@@ -460,5 +461,12 @@ footer a {
     /* form button */
     .send-button {
         padding: 10px 30px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    /* to-see page */
+    #to-see h3 {
+        font-size: 1.5rem;
     }
 }

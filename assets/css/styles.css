@@ -292,6 +292,46 @@ main {
     background-color: var(--bg-color);
 }
 
+/* to-see section */
+#to-see {
+    padding: 3rem;
+}
+
+#to-see > div {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+
+    padding: 2rem;
+    margin: 2rem;
+
+    border-radius: 1.25rem;
+}
+
+#to-see > div > div {
+    width: 50%;
+}
+
+#to-see h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+#to-see p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+#to-see img {
+    aspect-ratio: 1/1;
+    width: 40%;
+    object-fit: cover;
+    border-radius: 1.25rem;
+}
+
 /* footer */
 footer {
     color: var(--heading-color);
@@ -381,6 +421,20 @@ footer a {
     /* form button */
     .send-button {
         padding: 15px 40px;
+    }
+
+    /* To see section */
+    #to-see > div {
+        flex-direction: column-reverse;
+    }
+
+    #to-see > div > div {
+        width: 100%;
+    }
+
+    #to-see img {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
 

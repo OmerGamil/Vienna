@@ -52,8 +52,48 @@ Users of this website will be able to find information about the city, its histo
 
 -   HTML
     -   No errors found when running the code through the [W3C HTML Validator](https://validator.w3.org/)
-![Screenshot of the HTML Validator result](/assets/images/html_validator.png)
+![Screenshot of the HTML Validator result](assets/images/html-validator.jpg)
 
 -   CSS
     -   No errors found when running the code through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) 
-![Screenshot of the CSS validator result](/assets/images/css_validator.png) 
+![Screenshot of the CSS validator result](assets/images/css-validator.jpg)
+
+## Bugs
+-   There was a bug causing error when submitting the form because of the action method.
+I solved it by just typing the Code Institute link we used to use it with the form throughout the course.
+
+### Unfixed bugs
+-   No unfixed bugs
+
+## Deployment
+
+### Version Control
+-   The site was created using Gitpod editor and pushed to Github to the remote repository 'Vienna'.
+-   Git commands were used throughout the development to push the code to the remote repository. The following git commands were used:
+    -   git add . - to add the files to the staging area before being committed.
+    -   git commit -m "commit message" - to commit changes to the local repository queue that are ready for the final step.
+    -   git push - to push all committed code to the remote repository on Github.
+
+### Deployment to Github pages
+-   The site was deployed to Github pages as follows:
+    -   In the Github repository, I navigated to Settings tab
+    -   From the source section drop-down menu, I selected the Master branch and Save
+    -   Once the Master branch was selected, the page provided the link to the website
+-   The live link: [Vienna site](https://omergamil.github.io/Vienna/)
+
+### Cloning of the Repository Code locally
+-   Go to the Github repository that you want to clone
+-   Click on the Code button located above all the project files
+-   Click on HTTPS and copy the repository link
+-   Open the IDE of your choice and and paste the copied git url into the IDE terminal
+-   The project is now created as a local clone
+
+## Credits
+-   A special thanks to my Mentor for the support and answering all my Questions!
+
+### Content
+-   The icons in the footer and in the headings were taken from [Font Awesome](https://fontawesome.com/)
+-   I took inspiration from the Love Running project to create the header.
+
+### Media
+-   All the images in the website was taken from [Unsplash](https://unsplash.com/)

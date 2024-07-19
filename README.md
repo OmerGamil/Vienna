@@ -1,131 +1,59 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Vienna Website
+The Vienna website is a website that contains information about the beautiful city of Vienna. It targets everyone who wants to spend their vacation in the most beautiful city in the world or even plans to move there.
 
-Welcome Omer Ahmed,
+Users of this website will be able to find information about the city, its history, important government contacts and important tourist places. There is also a contact page with the founder of the site. The site is responsive to all screen sizes.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Screenshot of the websites homepage on different devices](assets/images/readme-photo.jpg)
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+* Navigation Bar
+    -   Featured at the top of all three pages, the navigation links are situated to the right. 
+    -  On larger screens they show the text; Home, Services and Contact. On smaller screens, such as mobiles, the navigation links are situated in the burger-icon that expands when you click it.
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Features
+* Navigation Bar
+    -   Featured at the top of all three pages, the navigation links are situated to the right. 
+    -  On larger screens they show the text; Home, Services and Contact. On smaller screens, such as mobiles, the navigation links are situated in the burger-icon that expands when you click it.
+    -  At the top left in the header section, there is the city logo, that will take the user to the home page when clicked.
+![Screenshot of the header containing city logo and navigation bar](assets/images/navbar.jpg)
 
-`python3 -m http.server`
+* The Home page
+    -   This is the landing page and with it's colourful and inviting picture of the City from top view, it aspires to bring motivation to the user to take the step towards visiting the city.
+![Screenshot of the landing page image for the top view of the city with the text "When life means something"](assets/images/landing-page.jpg)
+    -   The section below contains information about the city, its history, major government places and contact numbers.
+![Screenshot of the deff section](assets/images/deff-section.jpg)
 
-A blue button should appear to click: _Make Public_,
+* The Footer
+    -   The footer section includes relevant links to Facebook, Instagram , Youtube and some official websites.
+    -   The links will open in a new tab and they aspire to give the user more motivation to take the travelling step.
+![Screenshot of the Footer](assets/images/footer.jpg)
 
-Another blue button should appear to click: _Open Browser_.
+* The To See In Vienna page
+    -   The To See In Vienna page gives the user information on what places he can visit in Vienna
+![Screenshot of a part of the to-see page](assets/images/to-see-page.jpg)
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+* The Contact page
+    -   Background picture of the parlment of Austria.
+    -   Contact form that allows the user to fill in the necessary contact details to easy get in touch.
+    
+    ![Screenshot of the contact form and background picture](assets/images/contact-page.jpg)
 
-A blue button should appear to click: _Make Public_,
+## Testing
+-   Accessibility
+    -   I ran the pages through Lighthouse and confirmed that the colors and fonts are easy to read and that the site is accessible.
+    
+    ![Screenshot of Lighthouse result](assets/images/lighthouse-test.jpg)
+ 
+-   I tested and confirmed that the page works in different browsers; Chrome, Safari and Firefox.
+-   I tested and confirmed that all internal links are working and redirecting the user between the pages.
+-   I tested that all external links, to social media sites, are woking and opening in a separate tab.
+-   I tested and confirmed that the contact form works, all fields are required, the email field only accepts email address, and the submit button link works:
+![Screenshot of the Code institute page that is displayed when submitting the form](assets/images/form-submit.jpg)
 
-Another blue button should appear to click: _Open Browser_.
+-   HTML
+    -   No errors found when running the code through the [W3C HTML Validator](https://validator.w3.org/)
+![Screenshot of the HTML Validator result](/assets/images/html_validator.png)
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
-
-### Connecting your Mongo database
-
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**June 18, 2024,** Add Mongo back into template
-
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
-
-**May 28 2024:** Fix Mongo and Links installs
-
-**April 26 2024:** Update node version to 16
-
-**September 20 2023:** Update Python version to 3.9.17.
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+-   CSS
+    -   No errors found when running the code through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) 
+![Screenshot of the CSS validator result](/assets/images/css_validator.png) 
